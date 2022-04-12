@@ -1,0 +1,10 @@
+.round-button{
+width: 86px;
+height: 86px;
+border-radius: 43px;
+
+background: #FF758F;
+display: flex;
+justify-content: center;
+align-items: center;
+}

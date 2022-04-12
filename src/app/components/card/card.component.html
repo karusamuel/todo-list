@@ -1,0 +1,20 @@
+<div class="card">
+    <div class="header">
+        <app-button></app-button>
+    </div>
+    <div class="body">
+        <ng-container *ngFor="let task of tasks" >
+
+            <app-task taskname={{task.name}} ></app-task>
+
+        </ng-container>
+        
+    </div>
+    <div class="footer">
+        <app-view-all></app-view-all>
+    </div>
+    <!-- <div class="add-btn">
+        <app-round-button></app-round-button>
+    </div> -->
+    
+</div>
