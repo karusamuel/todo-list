@@ -1,6 +1,6 @@
 <div class="card">
     <div class="header">
-        <app-button></app-button>
+        <app-form  (newTask)="addNewTask($event)" ></app-form>
     </div>
     <div class="body">
         <ng-container *ngFor="let task of tasks" >

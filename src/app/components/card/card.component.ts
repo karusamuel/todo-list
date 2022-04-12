@@ -20,4 +20,8 @@ export class CardComponent implements OnInit {
     new Task("cook",false)
   ]
 
+  addNewTask(task:Task){
+    this.tasks.push(task)
+  }
+
 }

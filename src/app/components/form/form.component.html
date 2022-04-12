@@ -1,0 +1,8 @@
+<form (ngSubmit)="submit()" action="">
+    <div>
+        <input #inputTask="ngModel" required="required" class="input" [(ngModel)]="task" name="taskinput" placeholder="add task" type="text">
+        <div [hidden]="inputTask.pristine || inputTask.valid" >Invalid input</div>
+    </div>
+    <input class="btn" type="submit" value="submit" />
+
+</form>
