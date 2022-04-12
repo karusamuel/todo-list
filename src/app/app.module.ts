@@ -9,6 +9,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { TaskComponent } from './components/task/task.component';
 import { ViewAllComponent } from './components/view-all/view-all.component';
 import { RoundButtonComponent } from './components/round-button/round-button.component';
+import { FormComponent } from './components/form/form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,14 @@ import { RoundButtonComponent } from './components/round-button/round-button.com
     ButtonComponent,
     TaskComponent,
     ViewAllComponent,
-    RoundButtonComponent
+    RoundButtonComponent,
+    FormComponent,
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
